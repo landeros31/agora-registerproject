@@ -1,4 +1,6 @@
-# Para ejecutar el formulario de Agregar proyecto, hay que instalar 3 librerias, que son:
+## Para ejecutar el formulario de Agregar proyecto, hay que instalar 3 librerias, que son:
+
+Despues de intalar las librerias en la carpeta del Frontend, ejecutar normalmente con npm run start
 
 ## Formik
 
@@ -13,5 +15,3 @@
 - npm install react-bootstrap bootstrap
 
 ###
-
-Despues de intalar las librerias, ejecuta normalmente con npm run start
