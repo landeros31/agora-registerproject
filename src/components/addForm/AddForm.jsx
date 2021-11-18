@@ -8,6 +8,7 @@ import "@pathofdev/react-tag-input/build/index.css";
 import "./addForm.css";
 import Header from "../Header";
 import Footer from "../Footer";
+import *as controllerProject from '../../controllerProject';
 
 const AddProject = () => {
   const [formsent, setFormsent] = useState(false);
@@ -43,13 +44,14 @@ const AddProject = () => {
           deliverables: "",
           tags: [],
         }}
-        onSubmit={(values, { resetForm }) => {
+        onSubmit= {(values, { resetForm }) => {
           values.tags = tags;
           values.resources = resources;
           resetForm();
           setFormsent(true);
           setTimeout(() => setFormsent(false), 2000);
           console.log(values);
+          controllerProject.registerProject(values)
         }}
         validate={(values) => {
           let errors = {};
